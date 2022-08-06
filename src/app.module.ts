@@ -1,8 +1,6 @@
 import 'dotenv/config';
 import { Users } from './entities';
 import { Module } from '@nestjs/common';
-import { AppService } from './app.service';
-import { AppController } from './app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserHttpModule } from './useCases';
 
@@ -19,7 +17,5 @@ import { UserHttpModule } from './useCases';
     }),
     UserHttpModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
 export class AppModule {}

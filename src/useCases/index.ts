@@ -1,3 +1,3 @@
-import { UsersController, UserHttpModule, UsersService } from './users';
+import { UserHttpModule } from './users';
 
-export { UsersController, UserHttpModule, UsersService };
+export { UserHttpModule };
